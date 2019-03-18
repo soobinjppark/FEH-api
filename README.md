@@ -30,7 +30,7 @@ The data in the JSON file is formatted as following:
           }
        ],
        "Recommended IVs":[
-       # Returns Worst, Average, or Best according to Gamepress's recommendation.
+       # Returns Worst, Average, or Best IV for each stat, according to Gamepress
           {
              "HP":"Best",
              "ATK":"Best",
