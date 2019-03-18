@@ -9,7 +9,7 @@ class FEHSpider(scrapy.Spider):
     def start_requests(self):
         with open('../../feed_exports/heroes.json', 'r') as f:
             data = json.load(f)
-            for url in data[:5]:
+            for url in data:
                 yield SplashRequest(url=url['urls'], callback=self.parse)
     
     def parse(self, response):
@@ -51,7 +51,7 @@ class FEHSpider(scrapy.Spider):
                 "B Skill": table.xpath('.//following-sibling::table/tbody/tr[2]/td[2]/a/text()').get(),
                 "C Skill": table.xpath('.//following-sibling::table/tbody/tr[3]/td[2]/a/text()').get(),
                 "S Skill": table.xpath('.//following-sibling::table/tbody/tr[4]/td/a/text()').get(),
-                "SP": table.xpath('.//following-sibling::table/tbody/tr[4]/th[1]/text()').get()
+                "SP": table.xpath('.//following-sibling::table/tbody/tr[4]/td/text()').get()
             })
         return skillset
 
