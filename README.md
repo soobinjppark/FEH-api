@@ -26,7 +26,7 @@ The data in the JSON file is formatted as following:
              "B Skill":"Windsweep 3",
              "C Skill":"Threaten Def 3",
              "S Skill":"Heavy Blade 3",
-             "SP":"SP"
+             "SP":"1,560"
           }
        ],
        "Recommended IVs":[
