@@ -1,5 +1,5 @@
 # FireEmblemHeroesData
-Scrapes [https://fireemblem.gamepress.gg/](https://fireemblem.gamepress.gg/) for all available heroes, stats, recommended skill builds and IVs, and more.
+Uses Scrapy-Splash to scrape [https://fireemblem.gamepress.gg/](https://fireemblem.gamepress.gg/) for all available heroes, stats, recommended skill builds and IVs, and more.
 
 Latest scraped data is available in raw JSON data here:
 
