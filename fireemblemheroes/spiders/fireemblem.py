@@ -93,11 +93,11 @@ class FEHSpider(scrapy.Spider):
                 # Lv40 Stats
                 "40": {
                     "No Weapon": {
-                        "HP": [stat.xpath('.//table[contains(@id, "max")]/tbody/tr[2]/td[1]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[3]/td[1]/span[1]/text()').get(), stat.xpath('.//table[1]/tbody/tr[4]/td[1]/span[1]/text()').get()],
-                        "ATK": [stat.xpath('.//table[contains(@id, "max")]/tbody/tr[2]/td[2]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[3]/td[2]/span[1]/text()').get(), stat.xpath('.//table[1]/tbody/tr[4]/td[2]/span[1]/text()').get()],
-                        "SPD": [stat.xpath('.//table[contains(@id, "max")]/tbody/tr[2]/td[3]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[3]/td[3]/span[1]/text()').get(), stat.xpath('.//table[1]/tbody/tr[4]/td[3]/span[1]/text()').get()],
-                        "DEF": [stat.xpath('.//table[contains(@id, "max")]/tbody/tr[2]/td[4]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[3]/td[4]/span[1]/text()').get(), stat.xpath('.//table[1]/tbody/tr[4]/td[4]/span[1]/text()').get()],
-                        "RES": [stat.xpath('.//table[contains(@id, "max")]/tbody/tr[2]/td[5]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[3]/td[5]/span[1]/text()').get(), stat.xpath('.//table[1]/tbody/tr[4]/td[5]/span[1]/text()').get()]
+                        "HP": [stat.xpath('.//table[contains(@id, "max")]/tbody/tr[2]/td[1]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[3]/td[1]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[4]/td[1]/span[1]/text()').get()],
+                        "ATK": [stat.xpath('.//table[contains(@id, "max")]/tbody/tr[2]/td[2]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[3]/td[2]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[4]/td[2]/span[1]/text()').get()],
+                        "SPD": [stat.xpath('.//table[contains(@id, "max")]/tbody/tr[2]/td[3]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[3]/td[3]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[4]/td[3]/span[1]/text()').get()],
+                        "DEF": [stat.xpath('.//table[contains(@id, "max")]/tbody/tr[2]/td[4]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[3]/td[4]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[4]/td[4]/span[1]/text()').get()],
+                        "RES": [stat.xpath('.//table[contains(@id, "max")]/tbody/tr[2]/td[5]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[3]/td[5]/span[1]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[4]/td[5]/span[1]/text()').get()]
                     },
                     "Weapon" : {
                         "HP": [stat.xpath('.//table[contains(@id, "max")]/tbody/tr[2]/td[1]/span[2]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[3]/td[1]/span[2]/text()').get(), stat.xpath('.//table[contains(@id, "max")]/tbody/tr[4]/td[1]/span[2]/text()').get()],
