@@ -86,7 +86,7 @@ class FEHSpider(scrapy.Spider):
                         "HP": [stat.xpath('.//table[1]/tbody/tr[2]/td[1]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/tr[3]/td[1]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/tr[4]/td[1]/span[2]/text()').get()],
                         "ATK": [stat.xpath('.//table[1]/tbody/tr[2]/td[2]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/tr[3]/td[2]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/tr[4]/td[2]/span[2]/text()').get()],
                         "SPD": [stat.xpath('.//table[1]/tbody/tr[2]/td[3]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/tr[3]/td[3]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/tr[4]/td[3]/span[2]/text()').get()],
-                        "DEF": [stat.xpath('.//table[1]/tbody/tr[2]/td[4]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/tr[3]/td[4]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/r[4]/td[4]/span[2]/text()').get()],
+                        "DEF": [stat.xpath('.//table[1]/tbody/tr[2]/td[4]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/tr[3]/td[4]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/tr[4]/td[4]/span[2]/text()').get()],
                         "RES": [stat.xpath('.//table[1]/tbody/tr[2]/td[5]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/tr[3]/td[5]/span[2]/text()').get(), stat.xpath('.//table[1]/tbody/tr[4]/td[5]/span[2]/text()').get()]
                     }
                 },
