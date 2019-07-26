@@ -1,6 +1,15 @@
-# FireEmblemHeroesData
-Uses Scrapy-Splash to scrape [https://fireemblem.gamepress.gg/](https://fireemblem.gamepress.gg/) for all available heroes, stats, recommended skill builds and IVs, and more.
+# FEHData
 
+Uses Scrapy-Splash to scrape [https://fireemblem.gamepress.gg/](https://fireemblem.gamepress.gg/) for all available heroes, stats, recommended skill builds and IVs, and more.
+With the scraped data, REST API with authorization is implemented with Flask-RESTful and SQLite.
+API functionalities:
+* GET/DELETE/unit/<name> : Returns all of the unit's information (Builds, Stats, etc.)
+* GET /tier/<name> : Returns all of the units that match the specified tier rating
+* GET /movement/<name> : Returns all of the units that match the specified movement type (Infantry, Cavalry, etc.)
+* GET /weapon/<name> : Returns all of the units that match the specified weapon type.
+* GET /bst/<name> : Returns all of the units that match the specified tier rating.
+* POST /register (required: username, password):  Registers the user through SQLite database.
+      
 Latest scraped data is available in raw JSON data here:
 
 https://github.com/jacobspark/FireEmblemHeroesData/blob/master/feed_exports/index.json
