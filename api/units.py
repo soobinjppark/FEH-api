@@ -39,15 +39,3 @@ class Weapon(Resource):
 class BST(Resource):
     def get(self, name):
         return {'units': search_for_attribute(self, "Total Stats", name)}
-
-class Builds(Resource):
-    def get(self, name):
-        return {'units': search_for_attribute(self, "Recommended Builds", name)}
-
-class IVs(Resource):
-    def get(self, name):
-        return {'units': search_for_attribute(self, "Recommended IVs", name)}
-
-class Stats(Resource):
-    def get(self, name):
-        return {'units': search_for_attribute(self, "Stats", name)}
