@@ -1,4 +1,4 @@
-# FEHData
+# FEH-api
 
 Uses Scrapy-Splash to scrape [https://fireemblem.gamepress.gg/](https://fireemblem.gamepress.gg/) for all available heroes, stats, recommended skill builds and IVs, and more.
 With the scraped data, REST API with authorization is implemented with Flask-RESTful and SQLite.
