@@ -3,7 +3,7 @@
 Uses Scrapy-Splash to scrape [https://fireemblem.gamepress.gg/](https://fireemblem.gamepress.gg/) for all available heroes, stats, recommended skill builds and IVs, and more.
 With the scraped data, REST API with authorization is implemented with Flask-RESTful and SQLite.
 API functionalities:
-* GET/DELETE/unit : Returns all of the unit's information (Builds, Stats, etc.)
+* GET/DELETE /unit : Returns all of the unit's information (Builds, Stats, etc.)
 * GET /tier  : Returns all of the units that match the specified tier rating
 * GET /movement: Returns all of the units that match the specified movement type (Infantry, Cavalry, etc.)
 * GET /weapon : Returns all of the units that match the specified weapon type.
